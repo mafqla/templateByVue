@@ -1,2 +1,7 @@
 <!--pages/index/index.wxml-->
-<text>ssss</text>
+<view wx:for="{{bodys}}" wx:key="id">
+{{item.name}}
+</view>
+<navigator url="/pages/about/about">关于页面</navigator>
+<button bind:tap="gotoAbout">跳转页面的第二种方式</button>
+<text>{{ name }} : {{ age }}</text>
