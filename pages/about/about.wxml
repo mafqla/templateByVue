@@ -1,2 +1,0 @@
-<!--pages/about/about.wxml-->
-<button bind:tap="back">返回</button>

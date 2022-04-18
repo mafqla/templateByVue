@@ -6,24 +6,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    nick: 'test',
-    user: [],
-    bodys:[
-      {id:1,name:'rains'},
-      {id:2,name:'sun'},
-    ],
-    query:{
-      page: 1,
-    }
+    active: 0,
   },
-  gotoAbout(){
-    // 跳转页面
-    wx.navigateTo({
-      url: '/pages/about/about'
-    })
-    // 页面重定向
-    wx.redirectTo({
-      url: '/pages/about/about',
+  onClick(event) {
+    this.setData({ 
+      active: event.detail 
     })
   },
   /**

@@ -8,7 +8,7 @@ export default function(options){
     }
     const token = wx.getStorageSync('token')
     if(token){
-      reqOptions.header.Authorization = `Bearer ${token}`
+      // reqOptions.header.Authorization = `Bearer ${token}`
     }
   	wx.request(reqOptions)
   })
